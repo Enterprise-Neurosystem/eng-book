@@ -1,0 +1,78 @@
+\documentclass[krantz1,ChapterTOCs]{krantz}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{mathptmx}
+\usepackage{newtxtext,newtxmath}
+%\usepackage{hyperref}
+\usepackage{lipsum}
+
+
+\frenchspacing
+\tolerance=5000
+
+\makeindex
+\begin{document}
+\include{frontmatter/preamble}
+
+\frontmatter
+
+\title{AI and Sustainability for Emerging Markets}
+\author{Dinesh Verma}
+\maketitle
+
+
+%%%Placeholder for front matter
+
+%\halftitle
+
+%\booktitle
+
+%\locpage
+
+\include{frontmatter/dedication}
+%\cleardoublepage
+\setcounter{page}{7} %previous pages will be reserved for frontmatter to be added in later.
+\tableofcontents
+\include{frontmatter/foreword}
+\include{frontmatter/preface}
+\listoffigures
+\listoftables
+\include{frontmatter/contributor}
+%\include{frontmatter/symbollist}
+
+\mainmatter
+
+\part{Introduction}
+%\include{chapters/chap_sample/chapter}
+\include{chapters/chap_intro_ai/chapter}
+\include{chapters/chap_intro_sustainability/chapter}
+\include{chapters/chap_intro_markets/chapter}
+\include{chapters/chap_intro_final/chapter}
+
+\part{Addressing the Challenges}
+
+\include{chapters/chap_net_limited/chapter}
+\include{chapters/chap_limited_infra/chapter}
+\include{chapters/chap_data/chapter}
+\include{chapters/chap_security/chapter}
+
+\part{AI for Sustainability}
+
+\include{chapters/chap_climate_change_solns/chapter}
+\include{chapters/chap_water/chapter}
+
+%\part{Sustainability of AI}
+%\include{chapters/ch1}
+
+
+\bibliographystyle{plain}
+\bibliography{bibtex_example}
+
+\printindex
+\cleardoublepage
+\end{document}
+
